@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+aside {
+  /* width: 100px; */
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
+
+.fa-twitter {
+  color: rgb(21, 162, 194);
+}
+
+aside i {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+main {
+  margin-left: 100px;
+  margin-right: 50px;
+  width: 90%;
+  border-right: 1px solid lightgray;
+
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-circle-user {
+  color: rgb(183, 144, 183);
+  margin-top: 10px;
+}
+
+.feed-toggler {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tweet-button {
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(54, 201, 234);
+  color: white;
+  cursor: pointer;
+}
+
+.create-post {
+  display: flex;
+}
+
+.fa-image,
+.fa-face-smile,
+.fa-calendar,
+.fa-location-dot {
+  color: rgb(54, 201, 234);
+}
+
+
+
+.create-post .fa-circle-user {
+  font-size: 50px;
+}
+
+
+
+.create-post__content {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post__content input {
+  outline: none;
+  border: none;
+  height: 48px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.create-post__line2 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-post__line2 i {
+  padding: 8px;
+}
+
+.show-tweets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tweet {
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.name {
+  font-weight: 600;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.fa-arrow-left {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.popout-window {
+  height: 100%;
+  width: 40%;
+  border-left: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: white;
+  transition: transform 0.8s ease;
+  overflow: scroll;
+}
+
+.popout-window-show {
+  transform: translateX(0%);
+}
+
+.popout-window-hide {
+  transform: translateX(100%);
+}
+
+.popout-window-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+@media screen and (max-width : 700px) {
+  .popout-window {
+    width: 80%;
+  }
+}

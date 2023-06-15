@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/55fe212f40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <aside>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-bell"></i>
+    <i class="fa-regular fa-envelope"></i>
+    <i class="fa-regular fa-bookmark"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-feather"></i>
+  </aside>
+  <main>
+    <header>
+      <h2>Twitter Home</h2>
+      <br>
+      <br>
+      <div class="feed-toggler">
+        <p>For you</p>
+        <p>Following</p>
+
+      </div>
+    </header>
+    <div class="create-post">
+      <!-- <div class="create-post__row1"> -->
+      <i class="fa fa-duotone fa-circle-user"></i>
+
+      <!-- </div> -->
+      <div class="create-post__content">
+        <input type="text" placeholder="What's happening?">
+        <div class="create-post__line2">
+          <div>
+            <i class="fa-solid fa-image"></i>
+            <i class="fa-solid fa-face-smile"></i>
+            <i class="fa-regular fa-calendar"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <button class="tweet-button">Tweet</button>
+        </div>
+      </div>
+    </div>
+    <div class="show-tweets"></div>
+    <ul class="feed"></ul>
+  </main>
+  <div class="popout-window">
+    <button onclick="togglePopoutWindow()">X</button>
+
+    <ul class="popout-window-feed"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
